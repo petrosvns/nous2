@@ -1,9 +1,10 @@
-from langchain.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import Pinecone
-from langchain.llms import HuggingFaceHub
 import pinecone
+
+from langchain_community.document_loaders import TextLoader
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Pinecone
+from langchain_community.llms import HuggingFaceHub
 
 class ChatBot():
   loader = TextLoader('file_nous2.txt')
